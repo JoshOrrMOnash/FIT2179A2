@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Species Endangered level by State",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JoshOrrMOnash/FIT2179A2/refs/heads/main/Aus%20animal%20populations%20over%20time.csv"
+  },
+  "width": 450,
+  "height": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "State", "type": "nominal", "sort": "-y"},
+    "y": {"aggregate": "count", "type": "quantitative", "title": "Number of Records"},
+    "color": {"field": "IUCNStatus", "type": "nominal", "title": "IUCN Status"}
+  }
+}
