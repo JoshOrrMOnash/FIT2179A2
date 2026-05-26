@@ -1,0 +1,175 @@
+﻿country,threshold,driver,year,tc_loss_ha
+Australia,30,Hard commodities,2001,977
+Australia,30,Logging,2001,44370
+Australia,30,Other natural disturbances,2001,1518
+Australia,30,Permanent agriculture,2001,8302
+Australia,30,Settlements & Infrastructure,2001,2566
+Australia,30,Shifting cultivation,2001,4
+Australia,30,Wildfire,2001,160003
+Australia,30,Hard commodities,2002,1062
+Australia,30,Logging,2002,52232
+Australia,30,Other natural disturbances,2002,1594
+Australia,30,Permanent agriculture,2002,12041
+Australia,30,Settlements & Infrastructure,2002,3003
+Australia,30,Shifting cultivation,2002,3
+Australia,30,Wildfire,2002,241210
+Australia,30,Hard commodities,2003,1422
+Australia,30,Logging,2003,71617
+Australia,30,Other natural disturbances,2003,2602
+Australia,30,Permanent agriculture,2003,17262
+Australia,30,Settlements & Infrastructure,2003,6216
+Australia,30,Shifting cultivation,2003,0
+Australia,30,Wildfire,2003,272584
+Australia,30,Hard commodities,2004,1721
+Australia,30,Logging,2004,64055
+Australia,30,Other natural disturbances,2004,1404
+Australia,30,Permanent agriculture,2004,14616
+Australia,30,Settlements & Infrastructure,2004,4608
+Australia,30,Shifting cultivation,2004,18
+Australia,30,Wildfire,2004,37095
+Australia,30,Hard commodities,2005,2242
+Australia,30,Logging,2005,62982
+Australia,30,Other natural disturbances,2005,2101
+Australia,30,Permanent agriculture,2005,13763
+Australia,30,Settlements & Infrastructure,2005,4564
+Australia,30,Shifting cultivation,2005,4
+Australia,30,Wildfire,2005,90092
+Australia,30,Hard commodities,2006,2475
+Australia,30,Logging,2006,67311
+Australia,30,Other natural disturbances,2006,2252
+Australia,30,Permanent agriculture,2006,15864
+Australia,30,Settlements & Infrastructure,2006,3905
+Australia,30,Shifting cultivation,2006,2
+Australia,30,Wildfire,2006,93258
+Australia,30,Hard commodities,2007,3466
+Australia,30,Logging,2007,94168
+Australia,30,Other natural disturbances,2007,4826
+Australia,30,Permanent agriculture,2007,16399
+Australia,30,Settlements & Infrastructure,2007,4911
+Australia,30,Shifting cultivation,2007,11
+Australia,30,Wildfire,2007,247053
+Australia,30,Hard commodities,2008,3022
+Australia,30,Logging,2008,65890
+Australia,30,Other natural disturbances,2008,1856
+Australia,30,Permanent agriculture,2008,13378
+Australia,30,Settlements & Infrastructure,2008,4112
+Australia,30,Shifting cultivation,2008,6
+Australia,30,Wildfire,2008,116251
+Australia,30,Hard commodities,2009,2553
+Australia,30,Logging,2009,74781
+Australia,30,Other natural disturbances,2009,3809
+Australia,30,Permanent agriculture,2009,14280
+Australia,30,Settlements & Infrastructure,2009,3764
+Australia,30,Shifting cultivation,2009,4
+Australia,30,Wildfire,2009,103146
+Australia,30,Hard commodities,2010,3192
+Australia,30,Logging,2010,58453
+Australia,30,Other natural disturbances,2010,1730
+Australia,30,Permanent agriculture,2010,9206
+Australia,30,Settlements & Infrastructure,2010,2808
+Australia,30,Shifting cultivation,2010,1
+Australia,30,Wildfire,2010,213701
+Australia,30,Hard commodities,2011,2906
+Australia,30,Logging,2011,60144
+Australia,30,Other natural disturbances,2011,5829
+Australia,30,Permanent agriculture,2011,10105
+Australia,30,Settlements & Infrastructure,2011,2582
+Australia,30,Shifting cultivation,2011,29
+Australia,30,Wildfire,2011,38488
+Australia,30,Hard commodities,2012,2271
+Australia,30,Logging,2012,55725
+Australia,30,Other natural disturbances,2012,2051
+Australia,30,Permanent agriculture,2012,11128
+Australia,30,Settlements & Infrastructure,2012,3884
+Australia,30,Shifting cultivation,2012,4
+Australia,30,Wildfire,2012,62844
+Australia,30,Hard commodities,2013,2330
+Australia,30,Logging,2013,53931
+Australia,30,Other natural disturbances,2013,2910
+Australia,30,Permanent agriculture,2013,8095
+Australia,30,Settlements & Infrastructure,2013,3145
+Australia,30,Shifting cultivation,2013,10
+Australia,30,Wildfire,2013,188020
+Australia,30,Hard commodities,2014,2289
+Australia,30,Logging,2014,63583
+Australia,30,Other natural disturbances,2014,3127
+Australia,30,Permanent agriculture,2014,15232
+Australia,30,Settlements & Infrastructure,2014,3389
+Australia,30,Shifting cultivation,2014,5
+Australia,30,Wildfire,2014,192347
+Australia,30,Hard commodities,2015,2075
+Australia,30,Logging,2015,59326
+Australia,30,Other natural disturbances,2015,2219
+Australia,30,Permanent agriculture,2015,9201
+Australia,30,Settlements & Infrastructure,2015,3096
+Australia,30,Shifting cultivation,2015,1
+Australia,30,Wildfire,2015,184856
+Australia,30,Hard commodities,2016,4315
+Australia,30,Logging,2016,96683
+Australia,30,Other natural disturbances,2016,2457
+Australia,30,Permanent agriculture,2016,15745
+Australia,30,Settlements & Infrastructure,2016,4808
+Australia,30,Shifting cultivation,2016,6
+Australia,30,Wildfire,2016,306370
+Australia,30,Hard commodities,2017,3397
+Australia,30,Logging,2017,83451
+Australia,30,Other natural disturbances,2017,2207
+Australia,30,Permanent agriculture,2017,11753
+Australia,30,Settlements & Infrastructure,2017,3900
+Australia,30,Shifting cultivation,2017,5
+Australia,30,Wildfire,2017,131705
+Australia,30,Hard commodities,2018,2034
+Australia,30,Logging,2018,68004
+Australia,30,Other natural disturbances,2018,2418
+Australia,30,Permanent agriculture,2018,9219
+Australia,30,Settlements & Infrastructure,2018,2631
+Australia,30,Shifting cultivation,2018,11
+Australia,30,Wildfire,2018,166087
+Australia,30,Hard commodities,2019,2275
+Australia,30,Logging,2019,76803
+Australia,30,Other natural disturbances,2019,7756
+Australia,30,Permanent agriculture,2019,13547
+Australia,30,Settlements & Infrastructure,2019,3229
+Australia,30,Shifting cultivation,2019,64
+Australia,30,Wildfire,2019,1556875
+Australia,30,Hard commodities,2020,2552
+Australia,30,Logging,2020,83763
+Australia,30,Other natural disturbances,2020,4445
+Australia,30,Permanent agriculture,2020,9142
+Australia,30,Settlements & Infrastructure,2020,2809
+Australia,30,Shifting cultivation,2020,39
+Australia,30,Wildfire,2020,2253017
+Australia,30,Hard commodities,2021,1747
+Australia,30,Logging,2021,55804
+Australia,30,Other natural disturbances,2021,1471
+Australia,30,Permanent agriculture,2021,6862
+Australia,30,Settlements & Infrastructure,2021,2781
+Australia,30,Wildfire,2021,191869
+Australia,30,Hard commodities,2022,2338
+Australia,30,Logging,2022,39722
+Australia,30,Other natural disturbances,2022,1057
+Australia,30,Permanent agriculture,2022,5552
+Australia,30,Settlements & Infrastructure,2022,2467
+Australia,30,Shifting cultivation,2022,2
+Australia,30,Wildfire,2022,67509
+Australia,30,Hard commodities,2023,2396
+Australia,30,Logging,2023,31342
+Australia,30,Other natural disturbances,2023,329
+Australia,30,Permanent agriculture,2023,5024
+Australia,30,Settlements & Infrastructure,2023,1654
+Australia,30,Shifting cultivation,2023,19
+Australia,30,Wildfire,2023,149847
+Australia,30,Hard commodities,2024,1638
+Australia,30,Logging,2024,35311
+Australia,30,Other natural disturbances,2024,720
+Australia,30,Permanent agriculture,2024,5127
+Australia,30,Settlements & Infrastructure,2024,1640
+Australia,30,Shifting cultivation,2024,8
+Australia,30,Wildfire,2024,136075
+Australia,30,Hard commodities,2025,1433
+Australia,30,Logging,2025,29757
+Australia,30,Other natural disturbances,2025,1036
+Australia,30,Permanent agriculture,2025,4744
+Australia,30,Settlements & Infrastructure,2025,1474
+Australia,30,Shifting cultivation,2025,7
+Australia,30,Wildfire,2025,345455
