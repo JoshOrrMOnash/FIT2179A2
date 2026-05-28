@@ -32,13 +32,22 @@
         "url": "https://raw.githubusercontent.com/JoshOrrMOnash/FIT2179A2/refs/heads/main/Aus%20animal%20populations%20over%20time.csv"
       },
       "transform": [
+        
+  {"filter": "datum.EPBCStatus != null && datum.EPBCStatus != ''"},
         {"filter": "datum.EPBCStatus == statusFilter"}
       ],
       "mark": {"type": "circle", "opacity": 0.4, "size": 30},
       "encoding": {
         "longitude": {"field": "RegionCentroidLongitude", "type": "quantitative"},
         "latitude": {"field": "RegionCentroidLatitude", "type": "quantitative"},
-        "color": {"field": "TaxonomicGroup", "type": "nominal", "title": "Taxonomic Group"},
+        "color": {
+  "field": "TaxonomicGroup",
+  "type": "nominal",
+  "title": "Taxonomic Group",
+  "scale": {
+    "range": ["#264653", "#2a9d8f", "#457b9d", "#f4a261", "#e9c46a", "#8ecae6", "#adb5bd"]
+  }
+},
         "tooltip": [
           {"field": "CommonName", "title": "TaxonomicGroup"},
           {"field": "TaxonomicGroup", "title": "Class"},

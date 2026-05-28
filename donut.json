@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Total Tree Cover Loss by Driver 2001-2025",
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JoshOrrMOnash/FIT2179A2/refs/heads/main/AUSdeforest.csv"
+  },
+  "transform": [
+    {"filter": "datum.threshold == 30"},
+    {
+      "aggregate": [{"op": "sum", "field": "tc_loss_ha", "as": "TotalLoss"}],
+      "groupby": ["driver"]
+    }
+  ],
+  "mark": {"type": "arc", "innerRadius": 80},
+  "encoding": {
+    "theta": {"field": "TotalLoss", "type": "quantitative"},
+    "color": {
+  "field": "driver",
+  "type": "nominal",
+  "title": "Driver",
+
+  "scale": {
+  "range": ["#264653", "#2a9d8f", "#457b9d", "#f4a261", "#e9c46a", "#8ecae6", "#adb5bd", "#6d6875"]
+}
+},
+    "tooltip": [
+      {"field": "driver", "title": "Driver"},
+      {"field": "TotalLoss", "title": "Total Loss (ha)", "format": ","}
+    ]
+  }
+}

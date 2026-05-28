@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Tree Cover Loss by Driver Over Time",
+  "width": "container",
+"height": 350,
+"autosize": {
+  "type": "fit",
+  "contains": "padding"
+},
+  "data": {
+    "url": "https://raw.githubusercontent.com/JoshOrrMOnash/FIT2179A2/refs/heads/main/AUSdeforest.csv"
+
+  },
+  "transform": [
+    {"filter": "datum.threshold == 30"}
+  ],
+  "mark": {"type": "area", "opacity": 0.8},
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "tc_loss_ha",
+      "type": "quantitative",
+      "title": "Tree Cover Loss (ha)",
+      "stack": "zero"
+    },
+    "color": {
+      "field": "driver",
+      "type": "nominal",
+      "title": "Driver",
+      "scale": {
+  "range": ["#f4a261", "#e9c46a", "#264653", "#2a9d8f", "#457b9d", "#8ecae6", "#adb5bd", "#6d6875"]
+}
+},
+    "tooltip": [
+      {"field": "year", "title": "Year"},
+      {"field": "driver", "title": "Driver"},
+      {"field": "tc_loss_ha", "title": "Loss (ha)", "format": ","}
+    ]
+  }
+}

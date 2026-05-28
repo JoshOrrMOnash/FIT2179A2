@@ -7,7 +7,7 @@
   },
   "width": 600,
   "height": 300,
-  "mark": "line",
+  "mark": {"type": "line", "point": {"filled": true, "fill": "#2d6a4f"}, "color": "#1a472a", "strokeWidth": 2.5},
   "encoding": {
     "x": {"field": "Decade", "type": "temporal"},
     "y": {"field": "Cumulative number of extinct mammal species", "type": "quantitative"}

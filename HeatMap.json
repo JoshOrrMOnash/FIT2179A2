@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Threatened Species by Taxonomic Group and EPBC Status",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JoshOrrMOnash/FIT2179A2/refs/heads/main/Aus%20animal%20populations%20over%20time.csv"
+  },
+  "transform": [
+  {"filter": "datum.EPBCStatus != null && datum.EPBCStatus != ''"},
+  {
+    "aggregate": [{"op": "count", "as": "SpeciesCount"}],
+    "groupby": ["TaxonomicGroup", "EPBCStatus"]
+  }
+],
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "EPBCStatus",
+      "type": "nominal",
+      "title": "EPBC Status",
+      "axis": {"labelAngle": -20}
+    },
+    "y": {
+      "field": "TaxonomicGroup",
+      "type": "nominal",
+      "title": "Taxonomic Group"
+    },
+    "color": {
+      "field": "SpeciesCount",
+      "type": "quantitative",
+      "title": "Number of Species",
+      "scale": {
+  "range": ["#d8f3dc", "#95d5b2", "#52b788", "#2d6a4f", "#1a472a"]
+}
+    },
+    "tooltip": [
+      {"field": "TaxonomicGroup", "title": "Taxonomic Group"},
+      {"field": "EPBCStatus", "title": "EPBC Status"},
+      {"field": "SpeciesCount", "title": "Number of Species"}
+    ]
+  }
+}

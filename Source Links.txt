@@ -1,0 +1,11 @@
+https://tsx.org.au/tsx2024/?type=all&tgroup=All&group=All&subgroup=All&state=All&statusauth=Max&status=NT_VU_EN_CR&management=All&refyear=1985
+
+https://data.gov.au/data/dataset/2016-soe-biodiversity-cumulative-number-of-extinct-mammal-species/resource/8339c2b4-c763-4c50-a647-63935537453c
+
+https://www.globalforestwatch.org/dashboards/country/AUS/?category=forest-change&location=WyJjb3VudHJ5IiwiQVVTIl0%3D&scrollTo=net-change
+
+https://www.nespthreatenedspecies.edu.au/publications-and-tools/a-national-scale-dataset-for-threats-impacting-australia-s-imperiled-flora-and-fauna
+
+https://ourworldindata.org/grapher/terrestrial-protected-areas.csv?v=1&csvType=full&useColumnShortNames=false
+
+https://data.gov.au/data/dataset/2016-soe-biodiversity-australian-government-expenditure-on-biodiversity-management/resource/c92123f3-9196-4df3-8464-1c41055d23f6

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Threats to Australian Threatened Species",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {"threat": "Invasive species and diseases", "count": 415},
+      {"threat": "Adverse fire regimes", "count": 255},
+      {"threat": "Habitat loss, fragmentation and degradation", "count": 158},
+      {"threat": "Climate change and severe weather", "count": 80},
+      {"threat": "Disrupted ecosystem processes", "count": 37},
+      {"threat": "Overexploitation and direct harm", "count": 25},
+      {"threat": "Changed water regimes", "count": 23},
+      {"threat": "Pollution", "count": 6}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 40, "stroke": "white", "strokeWidth": 1},
+      "encoding": {
+        "theta": {
+          "field": "count",
+          "type": "quantitative",
+          "stack": true
+        },
+        "radius": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": {"type": "sqrt", "zero": true, "rangeMin": 40}
+        },
+        "color": {
+          "field": "threat",
+          "type": "nominal",
+          "title": "Threat",
+          "scale": {
+            "domain": [
+              "Invasive species and diseases",
+              "Adverse fire regimes",
+              "Habitat loss, fragmentation and degradation",
+              "Climate change and severe weather",
+              "Disrupted ecosystem processes",
+              "Overexploitation and direct harm",
+              "Changed water regimes",
+              "Pollution"
+            ],
+            
+  "range": [
+  "#f4a261",
+  "#e9c46a",
+  "#264653",
+  "#2a9d8f",
+  "#457b9d",
+  "#8ecae6",
+  "#adb5bd",
+  "#6d6875"
+]
+
+          }
+        },
+        "tooltip": [
+          {"field": "threat", "title": "Threat"},
+          {"field": "count", "title": "Species Affected"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "radiusOffset": 10, "fontSize": 10},
+      "encoding": {
+        "theta": {
+          "field": "count",
+          "type": "quantitative",
+          "stack": true
+        },
+        "radius": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": {"type": "sqrt", "zero": true, "rangeMin": 40}
+        },
+        "text": {"field": "count", "type": "quantitative"},
+        "color": {"value": "#1a2e1a"}
+      }
+    }
+  ]
+}

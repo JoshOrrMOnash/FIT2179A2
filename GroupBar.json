@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Invasive Threats by Animal Group",
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      {"Group": "Birds", "Threat": "Disease", "Count": 5},
+      {"Group": "Birds", "Threat": "Invasive predator", "Count": 20},
+      {"Group": "Birds", "Threat": "Invasive rabbit", "Count": 2},
+      {"Group": "Birds", "Threat": "Invasive rodent", "Count": 3},
+      {"Group": "Birds", "Threat": "Invasive ungulate", "Count": 5},
+      {"Group": "Birds", "Threat": "Invasive weed", "Count": 6},
+      {"Group": "Fish", "Threat": "Disease", "Count": 1},
+      {"Group": "Fish", "Threat": "Invasive fish", "Count": 12},
+      {"Group": "Fish", "Threat": "Invasive invertebrate", "Count": 3},
+      {"Group": "Frogs", "Threat": "Disease", "Count": 16},
+      {"Group": "Frogs", "Threat": "Invasive fish", "Count": 1},
+      {"Group": "Invertebrates", "Threat": "Disease", "Count": 2},
+      {"Group": "Invertebrates", "Threat": "Invasive invertebrate", "Count": 5},
+      {"Group": "Invertebrates", "Threat": "Invasive rodent", "Count": 13},
+      {"Group": "Invertebrates", "Threat": "Invasive ungulate", "Count": 3},
+      {"Group": "Invertebrates", "Threat": "Invasive weed", "Count": 9},
+      {"Group": "Mammals", "Threat": "Disease", "Count": 3},
+      {"Group": "Mammals", "Threat": "Invasive predator", "Count": 46},
+      {"Group": "Mammals", "Threat": "Invasive ungulate", "Count": 3},
+      {"Group": "Mammals", "Threat": "Invasive weed", "Count": 2},
+      {"Group": "Plants", "Threat": "Disease", "Count": 41},
+      {"Group": "Plants", "Threat": "Invasive invertebrate", "Count": 3},
+      {"Group": "Plants", "Threat": "Invasive rabbit", "Count": 36},
+      {"Group": "Plants", "Threat": "Invasive rodent", "Count": 4},
+      {"Group": "Plants", "Threat": "Invasive ungulate", "Count": 43},
+      {"Group": "Plants", "Threat": "Invasive weed", "Count": 118},
+      {"Group": "Reptiles", "Threat": "Invasive predator", "Count": 3},
+      {"Group": "Reptiles", "Threat": "Invasive ungulate", "Count": 1},
+      {"Group": "Reptiles", "Threat": "Invasive reptile", "Count": 1}
+    ]
+  },
+  "mark": {"type": "bar"},
+  "encoding": {
+    "x": {
+      "field": "Group",
+      "type": "nominal",
+      "title": "Animal Group"
+    },
+    "y": {
+      "field": "Count",
+      "type": "quantitative",
+      "title": "Number of Species Affected"
+    },
+    "color": {
+      "field": "Threat",
+      "type": "nominal",
+      "title": "Invasive Threat",
+      "scale": {
+  "range": ["#264653", "#2a9d8f", "#52b788", "#8ecae6", "#f4a261", "#e9c46a", "#457b9d", "#adb5bd"]
+}
+    },
+    "xOffset": {
+      "field": "Threat",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {"field": "Group", "title": "Animal Group"},
+      {"field": "Threat", "title": "Invasive Threat"},
+      {"field": "Count", "title": "Species Affected"}
+    ]
+  }
+}

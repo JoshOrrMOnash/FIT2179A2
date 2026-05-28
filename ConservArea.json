@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Australia's Protected Land Area Over Time",
+  "width": 600,
+  "height": 300,
+  "data": {
+  "url": "https://ourworldindata.org/grapher/terrestrial-protected-areas.csv?v=1&csvType=full&useColumnShortNames=false",
+  "format": {"type": "csv"}
+
+  },
+  "transform": [
+    {"filter": "datum.Entity == 'Australia'"},
+    {"filter": "datum['Terrestrial protected areas (% of total land area)'] != null"}
+  ],
+  "mark": {"type": "line", "point": true, "color": "#2d6a4f"},
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": -45, "labelOverlap": true}},
+    "y": {"field": "Terrestrial protected areas (% of total land area)", "type": "quantitative", "title": "Protected Land (%)"},
+    "tooltip": [
+      {"field": "Year", "title": "Year"},
+      {"field": "Terrestrial protected areas (% of total land area)", "title": "Protected (%)", "format": ".1f"}
+    ]
+  }
+}

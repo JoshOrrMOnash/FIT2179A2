@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": "Changing Conservation Priorities in Australia",
+
+  "width": 900,
+  "height": 450,
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/JoshOrrMOnash/FIT2179A2/refs/heads/main/funding-overall-expenditure-on-biodiversity.csv"
+  },
+
+  "transform": [
+    {
+      "fold": [
+        "National Landcare Programme - NHT",
+        "National Landcare Programme - ESP",
+        "CfoC - Working on Country",
+        "Working on Country ",
+        "CfoC - NW Corridor Plan",
+        "Biodiversity Fund",
+        "Green Army",
+        "Great Barrier Reed Foundation",
+        "Reef 2050 Plan (Reef Trust)",
+        "Env Research Facilities Programme",
+        "National Env Research Programme",
+        "Australian CC Science Programme",
+        "National Env Science Programme",
+        "NRM Planning for Climate Change - Stream 1",
+        "NRM Planning for Climate Change - Stream 2",
+        "CfoC - Dept of Treasury"
+      ],
+      "as": ["Program", "Funding"]
+    }
+  ],
+
+  "mark": "area",
+
+  "encoding": {
+    "x": {
+      "field": "Estimated expenditure ($A million)",
+      "type": "ordinal",
+      "title": "Financial Year"
+    },
+
+    "y": {
+      "aggregate": "sum",
+      "field": "Funding",
+      "stack": "center",
+      "title": "Funding ($A million)"
+    },
+
+    "color": {
+      "field": "Program",
+      "type": "nominal",
+      "scale": {
+  "range": ["#1a472a", "#2a9d8f", "#457b9d", "#264653", "#f4a261", "#8ecae6", "#e9c46a", "#adb5bd"]
+}
+    },
+
+    "tooltip": [
+      {
+        "field": "Program"
+      },
+      {
+        "aggregate": "sum",
+        "field": "Funding",
+        "title": "Funding ($A million)",
+        "format": ".2f"
+      }
+    ]
+  }
+}

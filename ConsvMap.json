@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Protected Land Area by Country (2020)",
+  "width": 900,
+  "height": 500,
+  "projection": {"type": "naturalEarth1"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
+        "format": {"type": "topojson", "feature": "countries"}
+      },
+      "mark": {"type": "geoshape", "fill": "#ccc", "stroke": "white", "strokeWidth": 0.3}
+    },
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
+        "format": {"type": "topojson", "feature": "countries"}
+      },
+      "transform": [
+  {
+    "calculate": "toNumber(datum.id)",
+    "as": "id_num"
+  },
+  {
+    "lookup": "id_num",
+    "from": {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JoshOrrMOnash/FIT2179A2/refs/heads/main/protected_areas_2020.csv"
+      },
+      "key": "id",
+      "fields": ["protected", "country"]
+    }
+  },
+  {"filter": "datum.protected != null"}
+],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
+      "encoding": {
+        "color": {
+          "field": "protected",
+          "type": "quantitative",
+          "title": "Protected Land (%)",
+          "scale": {"scheme": "greens", "reverse": false}
+        },
+        "tooltip": [
+          {"field": "country", "title": "Country Code"},
+          {"field": "protected", "title": "Protected Land (%)", "format": ".1f"}
+        ]
+      }
+    }
+  ]
+}
